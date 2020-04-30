@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(4, 27, 4);
+    }
+
+    .container {
+        opacity: 0;
+
+    }
+
+    .show {
+        opacity: 1;
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        grid-auto-rows: minmax(100px, auto);
+
+        grid-gap: 2px;
+        margin: auto;
+        left: 400px;
+        top: 200px;
+        transition-property: background-color;
+        transition-duration: 2s;
+
+    }
+
+   
+
+
+
+    .rulebook ul {
+        background-color: orange;
+        font-size: 20px;
+        list-style-type: disc;
+    }
+
+    .rulebook h3 {
+        background-color: orange;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+
+    }
+
+    .rulebook {
+        max-width: 600px;
+        margin: 0px auto;
+        grid-area: rule;
+    }
+
+    .delete {
+        cursor: pointer;
+
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:red;
+        border: 1px solid black;
+        transition-property: '.btn';
+        transition-duration: 1s;
+
+    }
+
+
+
+    .delete:hover {
+        background-color: indigo;
+    }
+
+    .btn {
+        background-color: red;
+        font-size: 34px;
+        text-decoration: none;
+    }
+
+
+
+
+    #demo {
+        background-color: orange;
+        width: 100px;
+    }
+
+    #storage {
+        background-color: orange;
+        width: 100px;
+    }
+    .delete .btn{
+        color:white;
+    }
+
+   
+    #boxer .btn{
+        background-color: rgb(70, 2, 2);
+    }
+</style>
+
+<body>
+    <div class="initial">
+
+        <p id="best"></p>
+        <p id="demo">"Time is"</p>
+        <p id='storage'>"Best time is"</p>
+        <!--button class="btn" id="bestscores" value="Know Best Scores"></button!-->
+        <section class="rulebook" id="rules">
+            <h3>Rules :</h3>
+            <ul>
+                <li>Press the start button to open the grid.</li>
+                <li>The timer sets off , now chase the numbers on the board.</li>
+                <li>You can choose only in ascending order ,"ascending order".</li>
+                <li>After completing the grid be quick to pounce on the stop button to record best time.</li>
+            </ul>
+        </section>
+        <section class="buttons">
+
+            <button class="btn" onclick="mytimer=setInterval(timer,1)" id="start">Start</button>
+            <button class="btn" onclick="clearInterval(mytimer)" id="saver"> Stop </button>
+            <button class="btn" id="restart">Restart</button>
+        </section>
+    </div>
+
+
+
+    <div class="container" id="boxer">
+
+        <div class="delete">
+            <button class='btn'>11</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>24</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>39</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>47</button></div>
+        <div class="delete">
+            <button class='btn'>56</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>64</button></div>
+        <div class="delete">
+            <button class='btn'>71</button></div>
+        <div class="delete">
+            <button class='btn'>83</button></div>
+        <div class="delete">
+            <button class='btn'>96</button></div>
+        <div class="delete">
+            <button class='btn'>15</button></div>
+        <div class="delete">
+            <button class='btn'>41</button></div>
+        <div class="delete">
+            <button class='btn'>45</button></div>
+
+        <div class="delete">
+            <button class='btn'>63</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>94</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>25</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>56</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>77</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>88</button>
+        </div>
+        <div class="delete">
+            <button class='btn'>29</button>
+        </div>
+
+        <div class="delete">
+            <button class='btn'>20</button></div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="removing.js">
+
+    </script>
+</body>
+
+</html>

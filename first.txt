@@ -1,0 +1,4 @@
+This is ver 1 of my project
+git status :checks the working condition of a repository if the file we have is a git repo or not.
+git add --a puts all the files corresponding in the staging area.
+I want this to get in commit 2.
